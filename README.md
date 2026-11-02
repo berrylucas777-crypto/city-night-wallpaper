@@ -78,3 +78,13 @@ python3 wallpaper.py screen
 ## 许可
 
 代码采用 MIT。照片不随包分发，下载图片遵循 [Pexels License](https://www.pexels.com/license/)。本项目与 Pexels 无隶属关系。
+
+## npm 12 调用说明
+
+npm 12 默认关闭 Git 来源安装。如果出现 EALLOWGIT，在这一条命令中显式允许本仓库安装：
+
+```sh
+npx --yes --allow-git=all --package=github:berrylucas777-crypto/city-night-wallpaper city-night-wallpaper install-skill
+```
+
+该选项仅作用于这次命令，不修改全局 npm 配置。本包没有额外依赖。
